@@ -1,0 +1,200 @@
+#main {
+  width: 100vw!important;
+  padding: 0!important;
+  .fusion-row {
+    max-width: 100%!important;
+  }
+  #calc-landing-page-container {
+    font-family: 'Arial', sans-serif;
+    color: $dark-gray;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+    #hero-container {
+      width: 100vw;
+      padding-left: 0;
+      padding-right: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      @media screen and (min-width: 1150px) {
+        height: 400px;
+      }
+      #hero-row {
+        height: 100%;
+        #hero-text {
+          height: 100%;
+          display: flex; 
+          align-items: center;
+          @media screen and (min-width: 1650px) {
+            width: 40%;
+          }
+          h1 {
+            font-size: 63px;
+            font-weight: 300;
+            line-height: 84px;
+            padding-left: 47px;
+            @media screen and (max-width: 648px) {
+              padding-left: 0px;
+            }
+          } /* h1 */
+        } /* hero-text */
+      } /* hero-row */
+    } /* hero-container */
+    #copy-container {
+      width: 90%;
+      max-width: 1300px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      #copy-left-side {
+        p {
+          padding-top: 0;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+        } /* p */
+        strong {
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 30px;
+          color: $dark-blue;
+        } /* strong */
+        #open-form-button {
+          margin-top: 56px;
+          width: 199px;
+          height: 49px;
+          background-color: #7a04dd;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+          text-transform: uppercase;
+          border-radius: 4px;
+          padding: 13px 29px;
+          outline: 0;
+          transition: all .2s;
+          border: none;
+          &:hover {
+            cursor: pointer;
+            background-color: $green;
+            color: black;
+            border: none;
+          }
+        } /* open-form-button */
+        #copy-left-side-under {
+          display: inline-flex;
+          flex-direction: row;
+          margin-top: 125px;
+          >div {
+            font-size: 14px;
+            line-height: 21px;
+            >div {
+              display: inline;
+            }
+          }
+          .info-popover {
+            display: inline;
+            color: $purple;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+          } /* a */
+        } /* copy-left-side-under */
+      } /* copy-left-side */
+      #copy-right-side {
+        #right-side-img {
+          img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 428px;
+            height: auto;
+          }
+        }
+      } /* copy-right-side */
+    } /* copy-container */
+    #infographic-container {
+      width: 90%;
+      max-width: 1300px;
+      margin-top: 125px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      #infographic-header-div {
+        h2 {
+          text-align: center;
+          font-weight: 300;
+          font-size: 36px;
+          line-height: 25px;
+          color: $dark-blue;
+        } /* h2 */
+      } /* infographic-header-div */
+      #infographic-content-row {
+        margin-top: 44px;
+        display: flex;
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+        #infographic-left-side {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          @media screen and (min-width: 801px) {
+            max-height: 680px;
+          }
+          @media screen and (max-width: 801px) {
+            background-image: none!important;
+            text-align: center;
+          }
+          #infographic-left-side-text-div {
+            margin-top: 145px;
+            margin-left: 38px;
+            @media screen and (max-width: 801px) {
+              margin-top: 0;
+              margin-left: 0;
+              text-align: center;
+            }
+            @media screen and (min-width: 801px ) and (max-width: 991px) {
+              margin-top: 60px;
+            }
+            #infographic-left-side-span {
+              font-size: 22px;
+              font-weight: 400;
+              line-height: 26px;
+              color: $teal-blue;
+            } /* infographic-left-side-span */
+          } /* infographic-left-side-text-div */
+        } /* infographic-left-side */
+        #infographic-right-side {
+          #repeater-container {
+            @media screen and (min-width: 801px) {              
+              margin-left: -10%;
+            }
+            #repeater-row {
+              #repeater-container-wrapper {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .repeater-columns {
+                  margin-bottom: 18px;
+                  background-color: $dark-blue;
+                  border-radius: 6px;
+                  padding: 47px 15px 47px 15px;
+                  p {
+                    color: #fff;
+                  } /* p */
+                } /* repeater-columns */
+              } /* repeater-container-wrapper */
+            } /* repeater-row */
+          } /* repeater-container */
+        } /* infographic-right-side */
+      } /* infographic-content-row */
+    } /* infographic-container */
+  } /* calc-landing-page-container */
+} /* main */

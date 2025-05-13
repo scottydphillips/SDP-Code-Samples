@@ -1,0 +1,232 @@
+#calc-results-container {
+  font-family: 'Arial', sans-serif;
+  color: $dark-gray;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 175px;
+  max-width: 1300px;
+  .container {
+    width: 90%;
+  }
+  #head-text-div {
+    margin-top: 115px;
+    margin-left: 15px;
+    margin-bottom: 75px;
+    #head-text {
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 25px;
+      color: $dark-blue;
+    } /* head-text */
+  } /* head-text-div */
+  #results-section {
+    width: 100%;
+    .above-benchmark {
+      color: $green;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 47px;
+      font-style: light;
+    } /* above-benchmark */
+    .below-benchmark {
+      color: $dark-blue;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 47px;
+      font-style: light;
+    } /* below-benchmark */
+    #giving-results-div {
+      border-right: 1px solid #bfc5cd;
+      @media screen and (max-width: 991px) {
+        border: none;
+        margin-bottom: 50px;
+      }
+      #giving-results {
+        font-size: 36px;
+        font-style: light;
+        line-height: 47px;
+      } /* giving-results */
+      #giving-results-footer {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        a {
+          font-weight: 700;
+          color: $purple;
+        } /* a */
+      } /* giving-results-footer */
+    } /* giving-results-div */
+    #volunteering-results-div {
+      #volunteering-results {
+        font-size: 36px;
+        font-style: light;
+        line-height: 47px;
+      } /* volunteering-results */
+      #volunteering-results-footer {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        a {
+          font-weight: 700;
+          color: $purple;
+        }
+      } /* volunteering-results-footer */
+    } /* volunteering-results-div */
+  } /* results-section */
+  #results-table-section {
+    text-align: center;
+    width: 100%;
+    #results-table-header {
+      font-size: 26px;
+      font-style: light;
+      line-height: 47px;
+    } /* results-table-header */
+    #table-container {
+      #results-table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        table-layout: fixed;
+        @media screen and (max-width: 767px) {
+          border: 0;
+          width: 100%;
+          table, thead, tbody, th, td, tr {
+            display: block;
+          }
+          thead {
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+          }
+          tr {
+            display: block;
+          }
+          td {
+            display: block;
+            text-align: right;
+            &::before {
+              content: attr(data-label);
+              float: left;
+              font-weight: 600;
+              white-space: nowrap;
+              width: 45%;
+            }
+          }
+        }
+        #table-headers {
+          th {
+            width: 33.33333%;
+            &:first-of-type {
+              background-color: #f5f8fa;
+            } /* first-of-type */
+            &:nth-of-type(2) {
+              background-color: $blue;
+              color: #fff;
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 21px;
+              padding: 10px 64px 5px 64px;
+            } /* nth-of-type(2) */
+            &:last-of-type {
+              background-color: $dark-blue;
+              color: #fff;
+              font-size: 17px;
+              line-height: 21px;
+              padding: 10px 64px 5px 64px;
+              #table-industry {
+                font-weight: 600;
+              } /* industry-insert */
+              #table-size {
+                font-size: 15px;
+                line-height: 19px;
+                color: #bbb;
+              } /* table-size */
+            } /* last-of-type */
+          } /* th */
+        } /* table-headers */
+        #giving-row {
+          text-align: center;
+          th {
+            width: 33.33333%;
+            background-color: #f5f8fa;
+            color: #000;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 21px;
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          } /* th */
+          td {
+            width: 33.33333%;
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
+            &:first-of-type {
+              background-color: #d3f2fa;
+              color: #000;
+              font-size: 17px;
+              font-weight: 400;
+              line-height: 21px;
+            } /* first-of-type */
+            &:last-of-type {
+              background-color: #c9dce2;
+              color: #000;
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 21px;
+              @media screen and (max-width: 767px) {
+                font-weight: 400;
+              }
+            } /* last-of-type */
+          } /* td */
+        } /* giving-row */
+        #volunteering-row {
+          text-align: center;
+          th {
+            width: 33.33333%;
+            background-color: #f5f8fa;
+            color: #000;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 21px;
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          } /* th */
+          td {
+            width: 33.33333%;
+            @media screen and (max-width: 767px) {
+              width: 100%;
+            }
+            &:first-of-type {
+              background-color: #d3f2fa;
+              color: #000;
+              font-size: 17px;
+              font-weight: 400;
+              line-height: 21px;
+            } /* first-of-type */
+            &:last-of-type {
+              background-color: #c9dce2;
+              color: #000;
+              font-size: 17px;
+              font-weight: 600;
+              line-height: 21px;
+              @media screen and (max-width: 767px) {
+                font-weight: 400;
+              }
+            } /* last-of-type */
+          } /* td */
+        } /* volunteering-row */
+      } /* results-table */
+    } /* table-container */
+  } /* results-table-section */
+} /* calc-results-container */
